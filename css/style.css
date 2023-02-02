@@ -1,0 +1,229 @@
+/* author:AMAL A M */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/academy-banner.jpg");
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.quate {
+    margin-top: 20px;
+}
+.bannermodification {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 8%;
+}
+.logo,
+.quate1 {
+    text-align: right;
+}
+.quate,
+.quate1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.advanced {
+    width: 100%;
+    min-height: 100vh;
+    padding: 3%;
+    position: relative;
+}
+.advanced-image {
+    width: 45%;
+    height: 65%;
+    margin-left: 100px;
+}
+.advanced-image img {
+    width: 100%;
+    height: 100%;
+}
+.description {
+    background-color: #1e2531;
+    position: absolute;
+    right: 150px;
+    top: 100px;
+    padding: 2%;
+}
+.description p {
+    font-weight: 600;
+    line-height: 2;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #5bc0f8;
+}
+.description p::after {
+    content: "}";
+    color: #f806cc;
+}
+.description p::before {
+    content: "{";
+    color: #f806cc;
+}
+.content {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* course strated */
+.course {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/modulebg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.course-deatils {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.course-deatils p {
+    color: #ffffff;
+    padding: 2% 6%;
+    border-radius: 10px;
+    background-color: #000000b3;
+}
+/* course closed */
+/* more strated */
+.more {
+    width: 100%;
+    min-height: 100vh;
+}
+.more-deatils {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.more-image {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.more-imagemale {
+    background-image: url("../images/testsbg.jpg");
+    width: 50%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 3%;
+}
+.more-imagefemale {
+    background-image: url("../images/intrvwbg.jpg");
+    width: 50%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 3%;
+}
+.more-content {
+    background-color: #06080bb3;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.more-content p {
+    width: 50%;
+}
+/* more closed */
+/* footer started */
+.footer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.join a {
+    text-decoration: none;
+    color: #f26422;
+    font-weight: bold;
+}
+.join {
+    border: solid #f26422;
+    width: fit-content;
+    padding: 20px 40px;
+}
+.footer-head h1 {
+    font-size: 50px;
+    color: #181e22;
+}
+.bottom {
+    margin-bottom: 20px;
+    color: #181e22;
+}
+.bottom1 {
+    margin-top: 20px;
+}
+.footer-bottom p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.last {
+    text-align: center;
+}
+/* footer end */
+
+@media screen and (max-width: 576px) {
+    .banner {
+        background-image: none;
+        background-color: #808080;
+        width: fit-content;
+    }
+    .bannermodification {
+        justify-content: center;
+        align-items: center;
+    }
+    .quate h1,
+    .quate1 h1 {
+        text-align: center;
+    }
+    .description {
+        position: static;
+        width: fit-content;
+    }
+    .bottom {
+        margin-top: 20px;
+    }
+}
